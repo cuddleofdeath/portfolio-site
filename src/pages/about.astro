@@ -1,0 +1,54 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Nav from '../components/Nav/index.jsx';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About CuddleofDeath</h1>
+			<div class="heroImg">
+				<img width="1400" height="350" src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75" />
+			</div>
+			<div class="bio wrapper wrapper__readable mt8">
+				<p>
+					Kristen is a developer who found joy in the web3 space at the end of 2021. She had been into technology ever since she was just a child playing on her Windows 95 computer. She has been a hardcore gamer throughout many of these years, and has experienced the evolution of languages like HTML and PHP. 
+				</p>
+				<p>
+					By the age of 11, she was editing her Neopets' "Pet Pages", which were HTML pages for digital creatures called Neopets. This was her first time experimenting with web development. She would spend years playing Neopets and spent many hours tampering with HTML. 
+				</p>
+				<p>
+					As she grew older, she had gained experience from working on her Neopets' pages and various Geocities pages as well. After graduating high school, she pursued an Associate's Degree in Applied Science. More specifically, her degree was called a 'Business Computer Applications Professional' degree. With the completion of her Associates, she had amassed a bit of knowledge in subjects like Computer Science, Microsoft Excel, Microsoft Word, Web Development, as well as Java.
+				</p>
+				<p>
+					Kristen continued adventuring through life not really knowing how to apply her knowledge. She spent many years trying to find her place. It wasn't until the end of 2021 that things would change drastically for her. She started pursuing web development again, researching blockchain technologies and all the possibilities of the new web3 world that was unfolding right before her eyes.
+				</p>
+				<p>
+					In March of 2022, she participated in her first ever hackathon with 4 other women. Her team ended up winning one of the bounty prizes!
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
